@@ -1,0 +1,23 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Problem1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastian12-def/JAVASCRIPT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebastian12-def/JAVASCRIPT/issues"
+  },
+  "homepage": "https://github.com/sebastian12-def/JAVASCRIPT#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
