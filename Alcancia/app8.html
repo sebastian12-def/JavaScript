@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto Alcancía</title>
+  <link rel="stylesheet" href="../CSS/app8.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mi Alcancía</h1>
+    <div class="buttons">
+      <button onclick="agregar(200)">Agregar $200</button>
+      <button onclick="agregar(500)">Agregar $500</button>
+      <button onclick="agregar(1000)">Agregar $1000</button>
+      <button onclick="mostrarTotal()">Mostrar total</button>
+      <button onclick="romper()">Romper alcancía</button>
+    </div>
+    <p id="resultado">La alcancía está vacía.</p>
+  </div>
+
+  <script type="module">
+    import Alcancia from './alcancia.js';
+
+    const alcancia = new Alcancia();
+
+    window.agregar = function(valor) {
+      alcancia.agregarMoneda(valor);
+      const { monedas200, monedas500, monedas1000 } = alcancia.contarMonedas();
+      document.getElementById("resultado").innerText =
+        `Monedas: 200 = ${monedas200}, 500 = ${monedas500}, 1000 = ${monedas1000}`;
+    };
+
+    window.mostrarTotal = function() {
+      document.getElementById("resultado").innerText =
+        "Total: $" + alcancia.calcularTotal();
+    };
+
+    window.romper = function() {
+      alcancia.romper();
+      document.getElementById("resultado").innerText = "La alcancía está vacía.";
+    };
+  </script>
+</body>
+</html>

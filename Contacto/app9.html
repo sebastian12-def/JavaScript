@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestor de Contactos</title>
+  <link rel="stylesheet" href="app9.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gestor de Contactos</h1>
+
+    <form onsubmit="event.preventDefault();">
+      <input type="text" id="id" placeholder="Identificación" required>
+      <input type="text" id="nombre" placeholder="Nombre" required>
+      <input type="text" id="apellido" placeholder="Apellido" required>
+      <input type="email" id="correo" placeholder="Correo" required>
+      <input type="text" id="celular" placeholder="Celular" required>
+
+      <div class="buttons">
+        <button onclick="agregarContacto()">Agregar</button>
+        <button onclick="consultarContacto()">Consultar</button>
+        <button onclick="actualizarContacto()">Actualizar</button>
+        <button onclick="eliminarContacto()">Eliminar</button>
+      </div>
+    </form>
+
+    <h2>Lista de Contactos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Correo</th>
+          <th>Celular</th>
+        </tr>
+      </thead>
+      <tbody id="tablaContactos"></tbody>
+    </table>
+  </div>
+
+  <script type="module" src="main9.js"></script>
+</body>
+</html>

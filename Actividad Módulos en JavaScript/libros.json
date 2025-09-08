@@ -1,0 +1,23 @@
+[
+  {
+    "titulo": "JavaScript Básico",
+    "autor": "Juan Pérez",
+    "numeroPaginas": 200,
+    "editorial": "Editorial A",
+    "idioma": "Español"
+  },
+  {
+    "titulo": "Aprendiendo Node.js",
+    "autor": "María López",
+    "numeroPaginas": 350,
+    "editorial": "Editorial B",
+    "idioma": "Español"
+  },
+  {
+    "titulo": "Programación Avanzada en JavaScript",
+    "autor": "Carlos Gómez",
+    "numeroPaginas": 500,
+    "editorial": "Editorial C",
+    "idioma": "Inglés"
+  }
+]
